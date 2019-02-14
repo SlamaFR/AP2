@@ -32,7 +32,7 @@ def decimal_vers_binaire2(n):
     else:
         q = n // 2
         r = n % 2
-        return decimal_vers_binaire(q) + str(r)
+        return decimal_vers_binaire2(q) + str(r)
 
 
 def decimal_vers_base(n, b):
@@ -42,15 +42,15 @@ def decimal_vers_base(n, b):
     :param b: Nouvelle base.
     :return: Nombre en base b.
 
-    >>> decimal_vers_binaire2(10, 4)
-    21
+    >>> decimal_vers_base(10, 4)
+    22
     """
     if n < b:
         return n
     else:
         q = n // b
         r = n % b
-        return decimal_vers_binaire(q) * 10 + r
+        return decimal_vers_base(q, b) * 10 + r
 
 
 # Pour étendre à des bases supérieures à 10, on doit utiliser d'autre caractères.
