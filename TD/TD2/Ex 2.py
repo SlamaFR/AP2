@@ -58,4 +58,4 @@ def somme_cubes_recursive(n):
     """
     if n < 2:
         return 1
-    return (n + somme_iterative(n - 1)) ** 2
+    return (n + somme_recursive(n - 1)) ** 2
