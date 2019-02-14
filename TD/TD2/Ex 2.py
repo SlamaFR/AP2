@@ -25,7 +25,7 @@ def somme_recursive(n):
     """
     if n < 2:
         return 1
-    return n + somme_iterative(n - 1)
+    return n + somme_recursive(n - 1)
 
 
 # Modifiez les expressions pour la sommes des cubes des n premiers entiers.
