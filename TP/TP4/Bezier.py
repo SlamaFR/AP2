@@ -50,7 +50,7 @@ def maj(points, present, pos_pt_select):
     trace_points(points)
     if present:
         tracer(points)
-    if pos_pt_select != -1:
+    if pos_pt_select is not None and pos_pt_select != -1:
         cercle(20 * (pos_pt_select + 1), 700, 8, couleur='red')
 
 
@@ -203,7 +203,8 @@ def tracer(points):
     :param points: liste de points, représentant la liste 
                    des points de contrôle de la courbe de Bezier 
     """
-    bezier_casteljau(points)
+    if len(points) >= 2:
+        bezier_casteljau(points)
 
 
 # Fonctions préliminaires sur les points
