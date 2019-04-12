@@ -4,3 +4,4 @@
 upemtk.py
 
 .idea/
+*__pycache__*
