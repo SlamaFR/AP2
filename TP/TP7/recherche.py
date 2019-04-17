@@ -230,7 +230,7 @@ teste_recherche_premier_indice(indice_dicho_rec, 3)
 # mais nécessairement le premier.
 
 
-# Exercice 4
+# Exercice 5
 
 
 def trace_courbes(abscisses, series, title='', xlabel='', ylabel=''):
