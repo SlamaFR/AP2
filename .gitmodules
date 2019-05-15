@@ -1,0 +1,3 @@
+[submodule "Hitori"]
+	path = Hitori
+	url = https://github.com/SlamaFR/Hitori.git
